@@ -21,6 +21,6 @@ function steps(num) {
 
 steps(4);
 
-/*This function has a cuadratic time O(n^2) because it has two linear functions that
+/*This function has a quadratic time O(n^2) because it has two linear functions that
 are nested. Therefore in this function needs to double the effort for every input as it 
 needs to go through the input twice */

@@ -4,15 +4,17 @@ a pyramid shape with n levels using the # character
 Make sure your piramid has spaces on both sides */
 
 function pyramid(num) {
+  let figure = "";
   for (let n = 0; n < num; n++) {
     for (let x = 0; x < num; x++) {
       if (x <= n) {
-        console.log(" # ");
+        figure += "#";
       } else {
-        console.log(" ");
+        figure += " ";
       }
     }
   }
+  console.log(figure);
 }
 
 pyramid(5);

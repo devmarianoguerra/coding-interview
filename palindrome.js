@@ -13,6 +13,6 @@ function palindrome(string) {
 
 palindrome("Oruro");
 
-/*this is a linear function O(1) because in does not matter the number of inputs or 
+/*this is a constant function O(1) because in does not matter the number of inputs or 
 the size of the string, it will always take the same amount of time or effort to 
 reverse and compare the string in this case */
