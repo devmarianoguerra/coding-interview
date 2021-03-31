@@ -5,22 +5,22 @@
  */
 
 function fibonacci(num, pos) {
-  let fib = [];
+  let fib = [0, 1];
   let prev = 0; //0
-  let after = 1; //1
+  let next = 1; //1
   for (let n = 0; n <= num; n++) {
-    let sum = prev + after;
+    let sum = prev + next;
     fib.push(sum);
-    prev = after;
-    after = sum;
+    prev = next;
+    next = sum;
     //console.log("n:", n);
-    //console.log(`${prev} + ${after} = ${sum}`);
+    //console.log(`${prev} + ${next} = ${sum}`);
   }
-  prev = after; // 1, 2, 3, 5...
-  after = prev + after; // 2, 3, 5, 8...
+  prev = next; // 1, 2, 3, 5...
+  next += prev; // 2, 3, 5, 8...
   return console.log(
     `The fibonacci secuence for ${num} levels is [${fib}], the number in position ${pos} is ${fib[pos]}`
   );
 }
 
-fibonacci(10, 2);
+fibonacci(10, 4);
