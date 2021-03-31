@@ -1,5 +1,5 @@
-/*given a strin, return true if the string is a plaindrome 
-or false ir it is not */
+/*given a string, return true if the string is a palindrome 
+or false if it is not */
 
 function palindrome(string) {
   const reversed = string.split("").reverse().join("");
@@ -12,3 +12,7 @@ function palindrome(string) {
 }
 
 palindrome("Oruro");
+
+/*this is a linear function O(1) because in does not matter the number of inputs or 
+the size of the string, it will always take the same amount of time or effort to 
+reverse and compare the string in this case */

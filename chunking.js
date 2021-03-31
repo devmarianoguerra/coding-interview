@@ -16,3 +16,9 @@ function chunk(arr, size) {
 }
 
 chunk([1, 2, 3, 4, 5, 6], 3);
+
+/*Time Complexity
+The time complexity of this function is linear time (O)n
+because 
+
+*/
